@@ -1,30 +1,27 @@
-// // src/app/app-routing.module.ts
-
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-// import { CvComponent } from './cv/cv.component';      // Impor Komponen CV
-// import { ContactComponent } from './contact/contact.component'; // Impor Komponen Kontak
-
-// const routes: Routes = [
-//   // Definisikan path untuk Halaman CV
-//   { path: 'cv', component: CvComponent },
-//   // Definisikan path untuk Halaman Kontak
-//   { path: 'contact', component: ContactComponent },
-//   // Redirect ke /cv jika tidak ada path yang cocok (halaman utama)
-//   { path: '', redirectTo: '/cv', pathMatch: 'full' },
-//   // Tambahkan path untuk halaman 404 (optional)
-//   // { path: '**', component: NotFoundComponent } 
-// ];
-
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
-// export class AppRoutingModule { }
-
-//ini yang ada di materi bapak tapi banyak yg error, minta penjelasan mana code yang benar.
-
-
+// src/app/app.routes.ts
 import { Routes } from '@angular/router';
+import { Cv as CvComponent } from './cv/cv';
+import { Contact as ContactComponent } from './contact/contact';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+ // 1. Path untuk Halaman CV
+ {
+   path: 'cv',
+   component: CvComponent,
+   title: 'Curriculum Vitae Saya'
+ },
+ // 2. Path untuk Halaman Kontak
+ {
+   path: 'contact',
+   component: ContactComponent,
+   title: 'Kontak Saya'
+ },
+ // 3. Redirect halaman utama ke /cv
+ {
+   path: '',
+   redirectTo: '/cv',
+   pathMatch: 'full'
+ },
+ // 4. (Opsional) Halaman 404
+ // { path: '**', component: NotFoundComponent }
+];

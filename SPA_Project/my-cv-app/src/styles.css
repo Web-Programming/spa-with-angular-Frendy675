@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #3a47bb;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-  background-color: #575757;
+  background-color: #070ad4;
 }
 
 .content {
