@@ -1,8 +1,12 @@
 import { Routes } from '@angular/router';
 import { Home as HomeComponent } from './home/home';
+import { Profile } from './profile/profile';
+import { Login } from './login/login';
+import { Register } from './register/register';
+import { Contact } from './contact/contact';
 
 export const routes: Routes = [
-    //mengatur halaman utama aplikasi
+    //mengatuh halaman utama aplikasi
     {
         path : "",
         component : HomeComponent,
@@ -11,18 +15,19 @@ export const routes: Routes = [
     {
         path : "profile",
         component : Profile,
-        //title : Profile
-    },  
+        //title : 'Profile Page'
+    },
     {
         path : "login",
-        component : Login
+        component : Login,
     },
     {
         path : "register",
-        component : Register
+        component : Register,
     },
     {
         path : "contact",
-        component : Contact
+        component : Contact,
     },
+
 ];
