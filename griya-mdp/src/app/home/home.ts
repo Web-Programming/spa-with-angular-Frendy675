@@ -25,8 +25,9 @@ export class Home implements OnInit {
       rating: 4.5,
       status: 'Available',
       type: 'rumah',
-      description: 'Hunian modern dengan desain minimalis di kawasan Jakarta Selatan yang strategis.',
-      postedDays: 2
+      description:
+        'Hunian modern dengan desain minimalis di kawasan Jakarta Selatan yang strategis.',
+      postedDays: 2,
     },
     {
       id: 2,
@@ -41,7 +42,7 @@ export class Home implements OnInit {
       status: 'Available',
       type: 'rumah',
       description: 'Rumah nyaman dengan lingkungan asri dan fasilitas lengkap.',
-      postedDays: 5
+      postedDays: 5,
     },
     {
       id: 3,
@@ -56,7 +57,7 @@ export class Home implements OnInit {
       status: 'Available',
       type: 'villa',
       description: 'Villa mewah dengan pemandangan pegunungan yang indah.',
-      postedDays: 1
+      postedDays: 1,
     },
     {
       id: 4,
@@ -71,7 +72,7 @@ export class Home implements OnInit {
       status: 'Pending',
       type: 'apartemen',
       description: 'Apartemen modern di pusat kota dengan akses ke berbagai fasilitas.',
-      postedDays: 3
+      postedDays: 3,
     },
     {
       id: 5,
@@ -86,7 +87,7 @@ export class Home implements OnInit {
       status: 'Available',
       type: 'rumah',
       description: 'Perumahan cluster dengan konsep hijau dan lingkungan yang asri.',
-      postedDays: 7
+      postedDays: 7,
     },
     {
       id: 6,
@@ -101,8 +102,8 @@ export class Home implements OnInit {
       status: 'Available',
       type: 'apartemen',
       description: 'Apartemen premium dengan fasilitas lengkap dan lokasi strategis.',
-      postedDays: 4
-    }
+      postedDays: 4,
+    },
   ];
 
   filteredList: Housing[] = [];
@@ -118,7 +119,7 @@ export class Home implements OnInit {
     if (type === 'all') {
       this.filteredList = [...this.housingList];
     } else {
-      this.filteredList = this.housingList.filter(h => h.type === type);
+      this.filteredList = this.housingList.filter((h) => h.type === type);
     }
   }
 
