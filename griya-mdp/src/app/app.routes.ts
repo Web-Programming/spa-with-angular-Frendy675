@@ -6,28 +6,26 @@ import { Register } from './register/register';
 import { Contact } from './contact/contact';
 
 export const routes: Routes = [
-    //mengatuh halaman utama aplikasi
-    {
-        path : "",
-        component : HomeComponent,
-        title : 'Home Page'
-    },
-    {
-        path : "profile",
-        component : Profile,
-        //title : 'Profile Page'
-    },
-    {
-        path : "login",
-        component : Login,
-    },
-    {
-        path : "register",
-        component : Register,
-    },
-    {
-        path : "contact",
-        component : Contact,
-    },
-
+  //mengatur halaman utama
+  {
+    path: '',
+    component: HomeComponent,
+    title: 'Home Page',
+  },
+  {
+    path: 'Profile',
+    component: Profile,
+  },
+  {
+    path: 'Login',
+    component: Login,
+  },
+  {
+    path: 'Register',
+    component: Register,
+  },
+  {
+    path: 'contact',
+    component: Contact,
+  },
 ];
